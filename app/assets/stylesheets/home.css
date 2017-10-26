@@ -1,3 +1,82 @@
-// Place all the styles related to the Home controller here.
+/*// Place all the styles related to the Home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+*/
+
+
+
+*{
+  padding: 0;
+  margin: 0; 
+}
+
+body{
+  margin: 0;
+  background: url(white.jpg);
+  height: 100%;
+  font: 13px/1.3 "Lucida Grande", sans-serif;
+  color: #666;
+ 
+}
+.content {
+  position: relative;
+  top: 30%;
+  z-index: 2;
+  margin: 0 auto;
+  max-width: 720px;
+  text-align: center;
+}
+
+.video {
+ position: fixed;
+ top: 50%; left: 50%;
+ z-index: 1;
+ min-width: 100%;
+ min-height: 100%;
+ width: auto;
+ height: auto;
+ transform: translate(-50%, -50%);
+}
+
+.chart {
+  display: table;
+  table-layout: fixed;
+  width: 50%;
+  max-width: 700px;
+  height: 200px;
+  margin: 0 auto;
+  background-color: #a2e5e5;
+  /*opacity: 0.8;*/
+  /*background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1) 2%, rgba(0, 0, 0, 0) 2%);*/
+  background-size: 100% 50px;
+  background-position: left top;
+}
+.chart li {
+  position: relative;
+  display: table-cell;
+  vertical-align: bottom;
+  height: 200px;
+}
+.chart span {
+  margin: 0 1em;
+  display: block;
+  background: #2E3261;
+  animation: draw 1s ease-in-out;
+}
+.chart span:before {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  padding: 5px 1em 0;
+  display: block;
+  text-align: center;
+  content: attr(title);
+  word-wrap: break-word;
+}
+
+@keyframes draw {
+  0% {
+    height: 0;
+  }
+}

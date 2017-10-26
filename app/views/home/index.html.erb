@@ -1,9 +1,20 @@
-<header>
-<h1> Welcome user! </h1> 
-</header>
 <body>
+<!--<%= video_tag "video.mp4", autoplay: :autoplay, loop: :loop, class: "video" %> --> 
+<h1> Welcome! </h1> 
+
+<h3> Containers in Phase one <%= @phase_one.count %> </h3>
+<h3> Containers in Phase two <%= @phase_two.count %> </h3>
+
+<ul class="chart">
+  <li>
+    <span style="height:5%" title="Phase 1"></span>
+  </li>
+  <li>
+    <span style="height:70%" title="Phase 2"></span>
+  </li>
+</ul>  
 
 <footer>
-<%= link_to('Logout', destroy_user_session_path, method: :delete) %>  
+<%= link_to('Logout', destroy_user_session_path, method: :delete) %>
 </footer>
-</body> 
+</body>
