@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>StageThree</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+   <p class="notice"><%= notice %></p>
+   <p class="alert"><%= alert %></p>
+
+
+
+   <header id="defaultheading">
+   	<!--<h2> Milktrace </h2> --> 
+   	<h1>
+  <a href="" class="typewrite" data-period="2000" data-type='[ "Milktrace.", "Trace.", "At Every.", "Step." ]'>
+    <span class="wrap"></span>
+  </a>
+</h1>
+   	<h5> Trace at every phase </h5>
+
+   	</header>
+<%= yield %>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  container_id: 
+  temperature: 1
+  time: 2017-10-26 11:05:11
+
+two:
+  container_id: 
+  temperature: 1
+  time: 2017-10-26 11:05:11
