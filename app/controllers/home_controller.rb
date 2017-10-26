@@ -7,4 +7,10 @@ class HomeController < ApplicationController
 		@phase_two = Container.where(:phase => 2)
 	end
 
+	def phase_one
+	end
+
+	def phase_two
+	end
+
 end

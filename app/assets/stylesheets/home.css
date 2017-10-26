@@ -55,12 +55,12 @@ body{
   position: relative;
   display: table-cell;
   vertical-align: bottom;
-  height: 200px;
+  height: 600px;
 }
 .chart span {
   margin: 0 1em;
   display: block;
-  background: #2E3261;
+  background: #424ec4;
   animation: draw 1s ease-in-out;
 }
 .chart span:before {

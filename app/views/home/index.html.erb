@@ -5,12 +5,22 @@
 <h3> Containers in Phase one <%= @phase_one.count %> </h3>
 <h3> Containers in Phase two <%= @phase_two.count %> </h3>
 
+
+
+
 <ul class="chart">
   <li>
+    <%= link_to "/home/phase_one" do %>
+      <%= content_tag :span, "Phase One"%>
+    <% end %>
     <span style="height:5%" title="Phase 1"></span>
   </li>
+
+
+
   <li>
-    <span style="height:70%" title="Phase 2"></span>
+    <span style="height:70%" title="Phase 2"><%= link_to "Pasteurization", "/home/phase_two" %>
+    </span>
   </li>
 </ul>  
 

@@ -15,6 +15,8 @@ Rails.application.routes.draw do
 
   resources :containers
 
+  get 'home/phase_one' => "home#phase_one"
+  get 'home/phase_two' => "home#phase_two"
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
 
