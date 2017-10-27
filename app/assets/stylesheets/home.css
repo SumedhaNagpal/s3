@@ -180,8 +180,8 @@ body{
 }
 #ninetests #ulofphase2 li{
   color: #111; font-family: 'Helvetica Neue', sans-serif; 
-  font-size: 27px; font-weight: bold; letter-spacing: -1px; line-height: 1; margin-left: 300px;
-  padding-top: 25px; list-style-type: none; word-spacing: 60px;
+  font-size: 27px; font-weight: bold; letter-spacing: -1px; line-height: 1; 
+  padding-top: 25px; list-style-type: none; text-align: center; 
 } 
 
 #ninetests #ulofphase2 #one{
@@ -193,3 +193,14 @@ body{
   width: 30px;
   background: linear-gradient(gray,  #87CEFA); 
 } 
+#ninetests #sbutton{
+  height: 50px;
+  width: 200px;
+  background: linear-gradient(gray,  #87CEFA); 
+  text-align: center;
+  font-weight: bold; 
+  font-size: 30px; 
+  margin-top: 40px;
+  margin-left: 42% ; 
+
+}
