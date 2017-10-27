@@ -1,10 +1,3 @@
-/*// Place all the styles related to the Home controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-*/
-
-
-
 *{
   padding: 0;
   margin: 0; 
@@ -12,10 +5,16 @@
 
 body{
   margin: 0;
-  background: url(white.jpg);
+  background: url(test.jpg);
+  background-repeat: no-repeat;
+  height: 100% ;
+  width: 100%; 
+  background-position: 0 0;
+  background-size: cover;
   height: 100%;
   font: 13px/1.3 "Lucida Grande", sans-serif;
   color: #666;
+   background-size:100% 100vh;
  
 }
 .content {
@@ -45,23 +44,35 @@ body{
   max-width: 700px;
   height: 200px;
   margin: 0 auto;
-  background-color: #a2e5e5;
+  background-color: #7FFF00;
   /*opacity: 0.8;*/
   /*background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1) 2%, rgba(0, 0, 0, 0) 2%);*/
   background-size: 100% 50px;
   background-position: left top;
+  opacity: 0.8;
+  border: 3px solid black;
 }
 .chart li {
   position: relative;
   display: table-cell;
   vertical-align: bottom;
-  height: 600px;
+  height: 300px;
 }
 .chart span {
   margin: 0 1em;
   display: block;
-  background: #424ec4;
+  background: #FF7F50;
   animation: draw 1s ease-in-out;
+  text-align: center;
+  font-family: 'courier new' ; 
+  font-weight: bold;
+}
+.chart li .heading{
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'courier new' ;
+  font-size: 15px;
+
 }
 .chart span:before {
   position: absolute;
@@ -80,3 +91,105 @@ body{
     height: 0;
   }
 }
+
+/* container info xss */
+
+#containerinfo {
+   width: 300px;
+   height: auto; 
+   color: black;
+   opacity: 0.8; 
+    margin-top: 40px; margin-left: 40%; margin-bottom: 40px; 
+    text-align: center; 
+    font-family: 'EB Garamond', serif;
+    font-size: 15px; 
+}
+#containerinfo h3{
+
+}
+#allphasechart{
+
+}
+
+
+/* footer */
+#homefooter {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(gray,  #87CEFA);
+    color: white;
+    text-align: right;
+    height: 50px;
+    font-family: 'EB Garamond', serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+@import url(https://fonts.googleapis.com/css?family=EB+Garamond|Cardo:400italic);
+/* phase one html erb */
+
+#phaseoneheader{
+  height: 100px; 
+  width: 100%;
+  background: linear-gradient(gray,  #87CEFA);
+  
+}
+#phaseoneheader h1{
+  font-family: 'Cardo', serif;
+  font-size: 50px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-shadow: 0.07em 0.07em 0 rgba(0, 0, 0, 0.1);
+}
+#phasetwoheader{
+  height: 100px; 
+  width: 100%;
+  background: linear-gradient(gray,  #87CEFA);
+  
+}
+#phasetwoheader h1{
+  font-family: 'Cardo', serif;
+  font-size: 50px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-shadow: 0.07em 0.07em 0 rgba(0, 0, 0, 0.1);
+}
+
+#phasethreeheader{
+  height: 100px; 
+  width: 100%;
+  background: linear-gradient(gray,  #87CEFA);
+  
+}
+#phasethreeheader h1{
+  font-family: 'Cardo', serif;
+  font-size: 50px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-shadow: 0.07em 0.07em 0 rgba(0, 0, 0, 0.1);
+}
+
+
+/* phase 2 */
+#ninetests #ulofphase2 {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column; 
+}
+#ninetests #ulofphase2 li{
+  color: #111; font-family: 'Helvetica Neue', sans-serif; 
+  font-size: 27px; font-weight: bold; letter-spacing: -1px; line-height: 1; margin-left: 300px;
+  padding-top: 25px; list-style-type: none; word-spacing: 60px;
+} 
+
+#ninetests #ulofphase2 #one{
+  padding-top: 55px; 
+} 
+
+#ninetests #ulofphase2 #c1{
+  height: 30px;
+  width: 30px;
+  background: linear-gradient(gray,  #87CEFA); 
+} 

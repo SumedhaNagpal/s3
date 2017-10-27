@@ -23,6 +23,13 @@ gem 'rails_12factor', group: :production
 
 gem 'active_model_serializers', '~> 0.10.0.rc2'
 
+gem 'coffee-script-source', '1.8.0'
+# Use Unicorn as the app server
+# gem 'unicorn'
+gem 'tzinfo-data', platforms: [:mingw, :mswin]
+
+require 'rbconfig'
+gem 'wdm', '>= 0.1.0' if RbConfig::CONFIG['target_os'] =~ /mswin|mingw|cygwin/i
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -41,7 +48,9 @@ gem 'devise'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-
+gem 'chartkick', '~> 1.2.4'
+gem 'groupdate', '~> 2.1.1'
+gem 'active_median', '~> 0.1.0'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'

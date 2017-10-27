@@ -13,4 +13,7 @@ class HomeController < ApplicationController
 	def phase_two
 	end
 
+	def phase_three
+	end 
+
 end
