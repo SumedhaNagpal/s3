@@ -8,6 +8,7 @@ class HomeController < ApplicationController
 	end
 
 	def phase_one
+    	
 	end
 
 	def phase_two

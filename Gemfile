@@ -23,6 +23,10 @@ gem 'rails_12factor', group: :production
 
 gem 'active_model_serializers', '~> 0.10.0.rc2'
 
+
+
+
+
 gem 'coffee-script-source', '1.8.0'
 # Use Unicorn as the app server
 # gem 'unicorn'
@@ -48,9 +52,9 @@ gem 'devise'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-gem 'chartkick', '~> 1.2.4'
-gem 'groupdate', '~> 2.1.1'
-gem 'active_median', '~> 0.1.0'
+# gem 'chartkick', '~> 1.2.4'
+# gem 'groupdate', '~> 2.1.1'
+# gem 'active_median', '~> 0.1.0'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'

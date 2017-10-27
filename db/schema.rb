@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171026053511) do
+ActiveRecord::Schema.define(version: 20171027143019) do
 
   create_table "containers", force: :cascade do |t|
     t.integer  "phase"
@@ -19,6 +19,20 @@ ActiveRecord::Schema.define(version: 20171026053511) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
+
+  create_table "phase_one_halves", force: :cascade do |t|
+    t.integer  "container_id"
+    t.boolean  "one"
+    t.boolean  "two"
+    t.boolean  "three"
+    t.boolean  "four"
+    t.boolean  "five"
+    t.boolean  "six"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+  end
+
+  add_index "phase_one_halves", ["container_id"], name: "index_phase_one_halves_on_container_id"
 
   create_table "phase_ones", force: :cascade do |t|
     t.integer  "container_id"
